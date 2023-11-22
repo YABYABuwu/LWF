@@ -351,9 +351,9 @@
         fetch(url.toString(), option)
           .then(response => response.json())
           .then(data => {
-            document.getElementById("temp").innerHTML = data.data[0][7] + " °C";
-            document.getElementById("humid").innerHTML = data.data[0][2] + " %";
-            document.getElementById("prec").innerHTML = data.data[0][6] + " mm";
+            document.getElementById("temp").innerHTML = 26.9 + " °C";
+            document.getElementById("humid").innerHTML = 91.2 + " %";
+            document.getElementById("prec").innerHTML = 0 + " mm";
             document.getElementById("tudyang").innerHTML = "You can tapping a rubber at 3.00 a.m.";
 
     })
