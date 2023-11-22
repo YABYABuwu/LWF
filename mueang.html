@@ -18,7 +18,6 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link rel="stylesheet" href="css/main.css">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
@@ -176,19 +175,101 @@
                     </div>
 
                     <!-- Content Row -->
-                    
+                    <div class="row">
 
                         <!-- Earnings (Monthly) Card Example -->
-                        <div class="card shadow mb-4">
+                        <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
-                                        <img src="img/map.png" alt="" style="height: auto; width: 100%;">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Humidity(%)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><p id="humid"></p></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <img src="img/humid.svg" alt="" style="height: 2.5rem; width: auto;">
+                                        </div>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Temperature(°C)</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><p id="temp"></p></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <img src="img/temp.svg" alt="" style="height: 2.5rem; width: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Precipitation
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800"><p id="prec"></p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <img src="img/prec.svg" alt="" style="height: 2.5rem; width: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                                Activity</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><p id="tudyang"></p></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <img src="img/um.svg" alt="" style="height: 2.5rem; width: auto;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                      </thead>
+                                      <tbody>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
                     
                     
